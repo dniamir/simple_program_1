@@ -4,8 +4,8 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug main.rs",
-            "program": "${workspaceFolder}/main",
+            "name": "Debug Blinky (cargo)",
+            "program": "${workspaceFolder}/target/debug/simple_program_1",
             "args": [],
             "cwd": "${workspaceFolder}",
             "sourceLanguages": ["rust"]
