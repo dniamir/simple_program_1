@@ -1,11 +1,12 @@
-use std::{thread, time};
+fn fibonacci(n: u32) -> u64 {
+    match n {
+        0 => 0,
+        1 => 1,
+        _ => fibonacci(n - 1) + fibonacci(n - 2),
+    }
+}
 
 fn main() {
-    let delay = time::Duration::from_millis(500);
-    loop {
-        println!("ON");
-        thread::sleep(delay);
-        println!("OFF");
-        thread::sleep(delay);
-    }
+    let n = 11;
+    println!("The {}th Fibonacci number is {}", n, fibonacci(n));
 }
